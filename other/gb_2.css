@@ -1,0 +1,20 @@
+#button-column {
+    display: inline;
+    float: left;
+  }
+  button {
+      font-size: 10px;
+      width: 50px;
+      height: 30px;
+      margin: 15px; 
+  }
+  
+  #info {
+      width: 200px;
+      height: 200px;
+      padding-top: 37.5px;
+      border: 1px solid black;
+      display: inline;
+      float: left;
+      text-align: center;
+  }
