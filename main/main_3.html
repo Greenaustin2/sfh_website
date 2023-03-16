@@ -6,38 +6,40 @@
 
 <body>
 <div class="container">
-    <div class="tl">
+<!-- Top Grid -->
+    <div class="top-left">
         <img class="logo_2" src="images/sflogo.png" alt="Hand Logo" >
-        <h1 class="header"><a href="main.html">SIX FINGER HAND</a></h1> 
+        <h1 class="header"><a href="main_3.html">SIX FINGER HAND</a></h1> 
     </div>
-    <div class="tr">
-        
+    <div class="top-right">
     </div>
-
-    <div class="left">
+<!-- Center Grid -->
+    <div class="center-left">
     <div class="inner-left">
         <ul id="myUL">
+      <!-- releases link list -->
       <li><span class="caret">releases</span>
         <ul class="nested">
           <li><span class="caret">all</span>
             <ul class="nested">
-            <li class="buttons" onclick="populate('com')">Collection of Music</li>
-            <li class="buttons" onclick="populate('wpb')">Watched Pot Boils</li>
-            <li class="buttons" onclick="populate('sfh')">SFH_KXLU_YYYY-mm-dd</li>
-            <li class="buttons" onclick="populate('mdvt')">The Many Deaths of Vincent Thomas</li>
-            <li class="buttons" onclick="populate('lb')">Last Balcony</li>
-             <li>Deconstructed Flag</li>
-            <li class="buttons" onclick="populate('ifs')">Ideas for Songs</li>
-            <li class="buttons" onclick="populate('tps')">Transpositions</li>
-            <li class="buttons" onclick="populate('01')">01101101 01110101 01110011 01101001 01100011</li>
+              <li class="buttons" onclick="populate('com')">Collection of Music</li>
+              <li class="buttons" onclick="populate('wpb')">Watched Pot Boils</li>
+              <li class="buttons" onclick="populate('sfh')">SFH_KXLU_YYYY-mm-dd</li>
+              <li class="buttons" onclick="populate('mdvt')">The Many Deaths of Vincent Thomas</li>
+              <li class="buttons" onclick="populate('lb')">Last Balcony</li>
+              <li>Deconstructed Flag</li>
+              <li class="buttons" onclick="populate('ifs')">Ideas for Songs</li>
+              <li class="buttons" onclick="populate('tps')">Transpositions</li>
+              <li class="buttons" onclick="populate('01')">01101101 01110101 01110011 01101001 01100011</li>
               <li>Graphic Balance</li>
               <li>NEULI</li>
               <li class="buttons" onclick="populate('mfh')">Music for Hawaii</li>
-              <li>Music for Australia</li>
-              <li>Music for Europe</li>
-              <li><a href="sfcard.html">VI_000</a></li>
+              <li class="buttons" onclick="populate('mfa')">Music for Australia</li>
+              <li class="buttons" onclick="populate('mfe')">Music for Europe</li>
+              <li class="buttons" onclick="populate('sfc')">VI_000</li>
 
             </ul>
+          <!-- audio link list -->
           <li><span class="caret">audio</span>
             <ul class="nested">
               <li class="buttons" onclick="populate('com')">Collection of Music</li>
@@ -48,19 +50,21 @@
               <li class="buttons" onclick="populate('tps')">Transpositions</li> 
               <li class="buttons" onclick="populate('01')">01101101 01110101 01110011 01101001 01100011</li>
               <li class="buttons" onclick="populate('mfh')">Music for Hawaii</li>
-              <li>Music for Australia</li>
-              <li>Music for Europe</li>
+              <li class="buttons" onclick="populate('mfa')">Music for Australia</li>
+              <li class="buttons" onclick="populate('mfe')">Music for Europe</li>
             </ul>
           </li>
+          <!-- visual link list -->
           <li><span class="caret">visual</span>
             <ul class="nested">
-              <li><a href="alexander.html">Hello My Friends</a></li>
-              <li>The Many Deaths of Vincent Thomas</li>
+              <li class="buttons" onclick="populate('hmf')">Hello My Friends</a></li>
+              <li class="buttons" onclick="populate('tmdovt')">The Many Deaths of Vincent Thomas</li>
               <li>Deconstructed Flag</li>
               <li>Graphic Balance</li>
               <li>NEULI</li>
             </ul>
           </li>
+          <!-- other link list -->
           <li><span class="caret">other</span>
             <ul class="nested">
                 <li>Collection of Images</li>
@@ -69,14 +73,12 @@
                 <li>aa_raw</li>
                 <li>big belly men</li>
                 <li>WB Kids!</li>
-
-              
             </ul>
           </li>
         </ul>
       </li>
     </ul>
-
+    <!-- clients link list -->
     <ul id="myUL">
       <li><span class="caret">clients</span>
         <ul class="nested">
@@ -93,6 +95,7 @@
         </ul>
       </li>
     </ul> 
+    <!-- contact link list -->
     <ul id="myUL">
       <li><span class="caret">contact</span>
         <ul class="nested">
@@ -107,29 +110,142 @@
     
     
     </div>
-
-    <div class="right">
-      <! -- collection of music -->
-      <div class="content" id="blank">collection of music</div>
+    <!-- hidden content divs -->
+    <div class="center-right">
+      <!-- collection of music -->
+        <div class="content" id="blank"></div>
+        <div class="content" id="hmf">
+          <h2>HELLO MY FRIENDS</h2>
+          <img id="album-art" src="images/015_hello-my-friends/hmf-cover.jpg"></img>
+          <h4>VI_015</h4>
+        </div>
         <div class="content" id="com">
-          <h2>Collection of Music</h2>
-          <img id="art" src="images/com/com_art.jpg"></img>
+          <h2>COLLECTION OF MUSIC</h2>
+          <img id="album-art" src="images/014_collection-of-music/com_art.jpg"></img>
           <iframe style="border-radius:0px" src="https://open.spotify.com/embed/album/1zsJrZ3hAvWJlexfU2p4lQ?utm_source=generator&theme=0" width="500" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <iframe title="vimeo-player" src="https://player.vimeo.com/video/329906821?h=bc654c5057" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+          <p>
+          released April 12, 2019<br><br>
+          TRACKLIST<br>
+          01_Ostia<br>
+          02_Hello My Friends<br>
+          03_Wrong Way Down a One Way<br>
+          04_Down Water St.<br>
+          05_Gin/Zantac 150<br>
+          06_Gavage<br>
+          07_Käbəlˌstōn Nītˌmer<br>
+          08_Automatism 86<br>
+          09_Pişmiş<br>
+          10_Hot Behind<br>
+          11_Juniper<br>
+          12_Long Ways from Home<br>
+          13_Till Death<br><br>
+          INSTRUMENTATION<br><br>
+          1980 Rhodes Suitcase 73<br>
+          Squire P-Bass<br><br>
+          Special thanks to debt, savings bonds and the culinary industry.<br><br>
+          VI_014
+          </p>
         </div>
         <!-- watched pot boils -->
         <div class="content" id="wpb">
-        <h2>Watched Pot Boils</h2>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3noCAiVtAbZ22LxCT0LwpA?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <h2>WATCHED POT BOILS</h2>
+        <img id="album-art" src="images/013_watched-pot/wpb-cover1.jpg">
+        <img id="album-art" src="images/013_watched-pot/wpb-cover2.jpg">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3noCAiVtAbZ22LxCT0LwpA?utm_source=generator&theme=0" width="500" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
          <!-- SFH_KXLU_YYYY-mm-dd -->
         <div class="content" id="sfh">
         <h2>SFH_KXLU_YYYY-mm-dd</h2>
+        <img id="album-art" src="images/012_kxlu/kxlu-cover.jpg"></img>
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2aQ9T2LzQzGbZuMPHTxP0h?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <p>
+        This is a compilation of released and unreleased material arranged by Six Finger Hand<br>
+        for live broadcast.<br><br>
+        Six Finger Hand<br>
+        252 Vernon Ave<br>
+        Brooklyn, New York 11206<br><br><br>
+        (Tracks 1-3)<br><br>
+        December 14th, 2017<br>
+        8:00-9 PM PST<br>
+        KXLU 88.9 FM<br>—<br>
+        One LMU Drive, Malone 402<br>
+        Los Angeles, CA 90045<br><br>
+        (Tracks 1-4)<br><br>
+        January 23rd, 2018<br>
+        6:00-7:30 PM ET<br>
+        Know Wave<br>—<br>
+        Chinatown<br>
+        New York, NY 10002<br><br><br>
+        Special thanks to Gabrielle Costa and Theo Constantinou.<br><br><br>
+
+        01_SFH_KXLU_2017-12-14.vi<br>
+        1. Life and Time - Austin Green<br>
+        2. Wasting Time - Polly Esther<br>
+        3. Through Navy Way - Austin Green & Giuseppe Lobasso<br>
+        4. Not Celebrity, Not Nice Guy - Six Finger Hand<br>
+        5. F-15 - Six Finger Hand<br><br>
+
+        02_SFH_KXLU_2017-12-14.vi<br>
+        1. Kits - Super-16<br>
+        2. Xanadu - Super-16<br>
+        3. Short Gasps (Real Boiz) - Ipsum Caballum<br>
+        4. Be Rad and More Gone - Ipsum Caballum<br>
+        5. You Owe Me 13 Dollars Back In 1972 - Misn0mer<br>
+        6. On The Sunny Side of the Volcano - Super-16<br><br>
+
+        03_SFH_KXLU_2017-12-14.vi<br>
+        1. Time - Ipsum Caballum<br>
+        2. Polive - Super-16<br>
+        3. Twins - Austin Green & Giuseppe Lobasso<br>
+        4. Gas Giant - Matt Payne<br>
+        5. Crimes & Punishment - Ipsum Caballum<br>
+        6. Anessas - Super-16<br><br>
+
+        04_SFH_KW_2018-01-23.vi (20:38)<br>
+        1. Handling Acid - Ipsum Caballum<br>
+        2. Airplane Mode - Ipsum Caballum<br>
+        3. Ripped - Ipsum Caballum<br>
+        4. Stolid - Austin Green & Giuseppe Lobasso<br>
+        5. Pam - Ipsum Caballum (Unreleased)<br>
+        6. Falling With Style - Ipsum Caballum<br>
+        7. Happy 4th - Super-16<br><br><br>
+        released December 14, 2017<br>
+        VI_012
+        </p>
         </div>
+
+
+        <!-- The Many Deaths of Vincent Thomas -->
+        <div class="content" id="tmdovt">
+        <h2>The Many Deaths of Vincent Thomas</h2>
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/222128307?h=c8543e4b5a" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+        <img id="album-art" src="images/011_vincent-thomas/vt-cover1">
+        <img id="album-art" src="images/011_vincent-thomas/vt-cover2">
+        <a href=""
+        
+        </div>
+
+
+
+
+
          <!-- Last Balcony -->
         <div class="content" id="lb">
         <h2>Last Balcony</h2>
+        <img id="album-art" src="images/010_last-balcony/lb-cover1.jpg">
+        <img id="album-art" src="images/010_last-balcony/lb-cover2.jpg">
+        <img id="album-art" src="images/010_last-balcony/lb-cover3.jpg">
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5smDeQsUkkL6etnaKqezlQ?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/221097885?h=8cabbf86c4" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+        <p>
+        An improvised digital conversation. Recorded live on a balcony.<br><br>
+        June 25, 2016<br><br>
+        2157 Maple St.<br>
+        Costa Mesa, California<br><br>
+
+        released June 12, 2017<br>
+        VI_010
         </div>
           <!-- Ideas for Songs -->
         <div class="content" id="ifs">
@@ -139,15 +255,28 @@
         <!-- Transpositions -->
         <div class="content" id="tps">
         <h2>Transpositions</h2>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0dn1xovkxfRLv9zjsevdw1?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style="border-radius:0px" src="https://open.spotify.com/embed/album/0dn1xovkxfRLv9zjsevdw1?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
+        <!-- 01101101 01110101 01110011 01101001 01100011 -->
         <div class="content" id="01">
         <h2>01101101 01110101 01110011 01101001 01100011</h2>
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5OAAlUyd4BlhiPWQK2x6Z4?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
+        <!-- Music for Hawaii -->
         <div class="content" id="mfh">
         <h2>Music for Hawaii</h2>
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6dlnTf8jtPm92FiaokNcoC?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <!-- Music for Europe -->
+        <div class="content" id="mfh">
+        <h2>Music for Europe</h2>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6LyVyR9XWEcgU9E9pbjMaz?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/160051186?h=d8a67505fe" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+        </div>
+        <!-- SFH Playing Card -->
+        <div class="content" id="sfc">
+        <h2>SFH 52</h2>
+        <img id="album-art" src="images/sfcard.png"></img>
         </div>
 
 <!-- CLIENTSCLIENTSCLIENTS -->
@@ -195,8 +324,9 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/LgmC-OWnk_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
-    <div class="bl"></div>
-    <div class="br">
+    <!-- bottom left and right grid segments -->
+    <div class="bottom-left"></div>
+    <div class="bottom-right">
         <img class="logo" src="images/sflogo.png" alt="Hand Logo" >
     </div>
 </div>
