@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "fslightbox": "^3.4.1",
+    "simple-lightbox": "^2.1.0"
+  }
+}

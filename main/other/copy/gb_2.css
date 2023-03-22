@@ -1,0 +1,272 @@
+/* || General styles */
+html {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+h1 {
+  color: #ebbc20;
+  font-family: "Univers LT Std", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+
+h1:hover {
+  color: #cca41e;
+}
+
+h2 {
+  color: #335be1;
+  font-family: "Univers LT Std", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+h4 {
+  color: #335be1;
+  font-family: "Univers LT Std", sans-serif;
+  font-weight: 100;
+  font-size: 0.75rem;
+}
+
+p {
+  color: #335be1;
+  font-family: Lucida Console, Lucida Sans Typewriter, monaco,
+    Bitstream Vera Sans Mono, monospace;
+  font-size: 0.75rem;
+}
+
+/* top logo */
+.logo_2 {
+  width: 3rem;
+  height: auto;
+  position: relative;
+  top: 40px;
+  left: 15px;
+  display: inline-block;
+}
+
+/* bottom logo */
+.logo {
+  width: 3rem;
+  height: auto;
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+
+/* || Grid */
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1.25fr 10fr 1fr;
+}
+.top {
+  position: relative;
+  grid-column: 1 / 3;
+  border: solid red;
+}
+
+.center-left {
+  position: relative;
+  border: solid black;
+}
+
+.inner-left {
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  border: solid green;
+}
+
+.center-right {
+  /* display: grid; */
+  position: relative;
+  overflow-y: scroll;
+
+  /* scrollbar-width: none; */
+  border: solid blue;
+  /* grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr, 10fr, 1fr; */
+}
+
+.bottom {
+  position: relative;
+  border: solid orange;
+  grid-column: 1 / 3;
+  grid-row: 3;
+}
+
+/* || List Functionality and Styling*/
+/* a:link {
+  color: #ebbc20;
+  text-decoration: none;
+  transition: all 0.25s ease;
+} */
+
+/* visited link */
+/* a:visited {
+  color: #ebbc20;
+  text-decoration: none;
+} */
+
+/* mouse over link */
+/* a:hover {
+  color: #cca41e;
+
+  text-decoration: none;
+} */
+
+/* selected link */
+/* a:active {
+  color: #cca41e;
+  text-decoration: none;
+} */
+
+/* Style the caret/arrow */
+.caret {
+  user-select: none; /* Prevent text selection */
+  transition: all 0.25s ease;
+  margin-left: -13px;
+}
+
+.caret:hover {
+  color: #cca41e;
+}
+.caret:active {
+  color: #335be1;
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\005E";
+  color: #c4a82d68;
+  display: inline-block;
+  margin-right: 6px;
+
+  transform: rotate(90deg);
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(180deg);
+}
+
+/* Hide the nested list */
+.nested {
+  display: none;
+  margin-left: -15px;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+}
+
+.buttons {
+  color: #ebbc20;
+  font-family: Lucida Console, Lucida Sans Typewriter, monaco,
+    Bitstream Vera Sans Mono, monospace;
+  font-size: 0.75rem;
+  transition: all 0.25s ease;
+}
+
+.buttons:hover {
+  color: #cca41e;
+  cursor: default;
+  text-decoration: none;
+}
+
+.buttons:active {
+  color: #335be1;
+}
+
+ul,
+#myUL {
+  list-style-type: none;
+  color: #ebbc20;
+  font-family: Lucida Console, Lucida Sans Typewriter, monaco,
+    Bitstream Vera Sans Mono, monospace;
+  font-size: 0.75rem;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+  margin: 0;
+  padding: 0.25rem;
+  font-size: 0.8rem;
+}
+/* 
+#image {
+  position: relative;
+} */
+
+/* Content styling and functionality */
+.content {
+  display: none;
+  position: relative;
+  /* grid-column: 1;
+  grid-row: 1; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
+  border: solid purple;
+}
+
+.content-top {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  border: solid orange;
+}
+
+.content-left {
+  border: solid red;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.content-right {
+  border: solid yellow;
+  grid-column: 2;
+  grid-row: 2;
+  margin-right: 0px;
+}
+
+.content-bottom {
+  border: solid green;
+  grid-column: 1 / 3;
+  grid-row: 3;
+}
+
+#album-art {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+
+#streaming-icon {
+  width: 20px;
+  height: auto;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+#streaming-icon:hover {
+  filter: brightness(75%);
+}
+
+#streaming-icon:active {
+  filter: hue-rotate(180deg);
+}
