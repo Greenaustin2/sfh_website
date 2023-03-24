@@ -1,0 +1,116 @@
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1rem;
+  }
+  /* main grid styling */
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.25fr 10fr 10fr 1fr;
+  }
+  .top {
+    position: relative;
+    grid-column: 1;
+    /* border: solid red; */
+  }
+  .center-left {
+    position: relative;
+    /* border: solid black; */
+    overflow-y: auto;
+    grid-row: 2;
+  }
+  .inner-left {
+    position: absolute;
+    left: 70px;
+    top: 20px;
+    /* border: solid green; */
+  }
+  .center-right {
+    /* display: grid; */
+    position: relative;
+    overflow-y: scroll;
+    grid-row: 3;
+    /* scrollbar-width: none; */
+    /* border: solid blue; */
+    /* grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 10fr, 1fr; */
+  }
+  .bottom {
+    position: relative;
+    border: solid orange;
+
+    grid-row: 4;
+  }
+
+  /* inner content grid styling */
+  .content {
+    display: none;
+    position: relative;
+    /* grid-column: 1;
+    grid-row: 1; */
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: fit-content(60px) 10fr 10fr 1fr;
+    /* border: solid purple; */
+    height: 100%;
+    max-height: 100%;
+  }
+  
+  .content-top {
+    grid-row: 1;
+    border: solid orange;
+    padding: 10px 0px 0px 0px;
+    position: relative;
+  }
+  
+  .content-left {
+    border: solid red;
+    grid-row: 2;
+    position: relative;
+  }
+  
+  .content-right {
+    border: solid yellow;
+    grid-row: 3;
+    padding: 0px 50px 20px 40px;
+    overflow-y: scroll;
+    position: relative;
+  }
+  
+  .content-bottom {
+    border: solid green;
+    grid-row: 4;
+    position: relative;
+  }
+
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 1rem;
+  }
+  /* .logo_2 {
+    width: 12%;
+    height: auto;
+  } */
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  /* .logo_2 {
+    width: 10%;
+    height: auto;
+  }
+} */
+
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1400px) {
+}
