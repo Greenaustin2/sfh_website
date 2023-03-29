@@ -24,6 +24,8 @@ function populate(id) {
   // div.innerHTML = "<img src=\'images/sfcard.png\' id=\"image\">";
 }
 
+$().
+
 // h2 text stretch function
 // $.fn.strech_text = function () {
 //   var elmt = $(this),

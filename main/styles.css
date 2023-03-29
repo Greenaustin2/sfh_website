@@ -1,7 +1,3 @@
-/* || General styles */
-/* html {
-  height: 100%;
-} */
 body {
   min-height: 100vh;
   width: 100%;
@@ -65,12 +61,11 @@ p {
   font-size: 1rem;
   color: #ebbc20;
   text-decoration: none;
-  border: solid black;
-  /* position: relative; */
+  /* border: solid black; */
 }
 
 /* top logo */
-.logo_2 {
+.logo-top {
   min-width: 100px;
   max-width: 240px;
   height: auto;
@@ -79,22 +74,30 @@ p {
   top: 10%;
   left: 15px;
   border: solid black;
-  /* display: inline; */
   transition: all 0.25s ease;
 }
 
-.logo_2:hover {
+.logo-top:hover,
+.logo-bottom:hover {
   filter: brightness(80%);
   transition: all 0.25s ease;
 }
 
+/* .logo-top:active,
+.logo-bottom:active {
+  filter: hue-rotate(180deg);
+  filter: brightness(100%);
+  transition: all 0.25s ease;
+} */
+
 /* bottom logo */
-.logo {
+.logo-bottom {
   width: 3rem;
   height: auto;
   position: absolute;
   right: 5%;
   top: 10%;
+  transition: all 0.25s ease;
 }
 
 /* || Grid */
@@ -108,13 +111,14 @@ p {
 .top {
   position: relative;
   grid-column: 1 / 3;
-  /* border: solid red; */
+  border: solid red;
 }
 
 .center-left {
   position: relative;
-  /* border: solid black; */
+  border: solid black;
   overflow-y: auto;
+  padding: 40px 0px 20px 30px;
 }
 
 .inner-left {
@@ -125,14 +129,8 @@ p {
 }
 
 .center-right {
-  /* display: grid; */
   position: relative;
   overflow-y: scroll;
-
-  /* scrollbar-width: none; */
-  /* border: solid blue; */
-  /* grid-template-columns: 1fr, 1fr;
-  grid-template-rows: 1fr, 10fr, 1fr; */
 }
 
 .bottom {
@@ -141,32 +139,6 @@ p {
   grid-column: 1 / 3;
   grid-row: 3;
 }
-
-/* || List Functionality and Styling*/
-/* a:link {
-  color: #ebbc20;
-  text-decoration: none;
-  transition: all 0.25s ease;
-} */
-
-/* visited link */
-/* a:visited {
-  color: #ebbc20;
-  text-decoration: none;
-} */
-
-/* mouse over link */
-/* a:hover {
-  color: #cca41e;
-
-  text-decoration: none;
-} */
-
-/* selected link */
-/* a:active {
-  color: #cca41e;
-  text-decoration: none;
-} */
 
 /* Style the caret/arrow */
 .caret {
@@ -243,17 +215,11 @@ ul,
   padding: 0.25rem;
   font-size: 0.8rem;
 }
-/* 
-#image {
-  position: relative;
-} */
 
 /* Content styling and functionality */
 .content {
   display: none;
   position: relative;
-  /* grid-column: 1;
-  grid-row: 1; */
   grid-template-columns: 1fr 1fr;
   grid-template-rows: fit-content(60px) auto 1fr;
   /* border: solid purple; */
@@ -264,20 +230,20 @@ ul,
 .content-top {
   grid-column: 1 / 3;
   grid-row: 1;
-  border: solid orange;
+  /* border: solid orange; */
   padding: 10px 0px 0px 0px;
   position: relative;
 }
 
 .content-left {
-  border: solid red;
+  /* border: solid red; */
   grid-column: 1;
   grid-row: 2 / 3;
   position: relative;
 }
 
 .content-right {
-  border: solid yellow;
+  /* border: solid yellow; */
   grid-column: 2;
   grid-row: 2 / 4;
   padding: 0px 50px 20px 40px;
@@ -285,7 +251,7 @@ ul,
 }
 
 .content-bottom {
-  border: solid green;
+  /* border: solid green; */
   grid-column: 1;
   grid-row: 3;
 }
@@ -324,12 +290,3 @@ ul,
 #pdf {
   display: none;
 }
-
-/* stretch styling */
-
-/* .stretch_it {
-  white-space: nowrap;
-}
-.justify {
-  text-align: justify;
-} */
