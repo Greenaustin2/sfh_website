@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+
+<link rel="stylesheet" href="css/styles.css" type="text/css">
+<link rel="stylesheet" href="css/queries.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<!-- stretch script
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+</head>
+
+<body>
+
+<div class="container">
+<!-- Top Grid -->
+    <div class="top">
+
+      <img class="logo-top" src="images/full_logo.png" alt="Hand Logo">
+    
+
+      
+
+<!--
+      <a class="nav" href="contact.html">Contact</a>
+      <a class="nav" href="shop.html">Shop</a>
+-->
+      
+
+    </div>
+
+<!-- Center Grid -->
+  <div class="center-left">
+    <!-- <div class="inner-left"> -->
+      <ul id="myUL">
+      <!-- releases link list -->
+        <li><span class="caret">releases</span>
+          <ul class="nested">
+            <li><span class="caret">all</span>
+              <ul class="nested">
+                <li class="buttons" onclick="populate('hmf')">_Hello My Friends</li>
+                <li class="buttons" onclick="populate('com')">_Collection of Music</li>
+                <li class="buttons" onclick="populate('wpb')">_Watched Pot Boils</li>
+                <li class="buttons" onclick="populate('sfh')">_SFH_KXLU_YYYY-mm-dd</li>
+                <li class="buttons" onclick="populate('tmdovt')">_The Many Deaths of Vincent Thomas</li>
+                <li class="buttons" onclick="populate('lb')">_Last Balcony</li>
+                <li class="buttons" onclick="populate('df')">_Deconstructed Flag</li>
+                <li class="buttons" onclick="populate('ifs')">_Ideas for Songs</li>
+                <li class="buttons" onclick="populate('tps')">_Transpositions</li>
+                <li class="buttons" onclick="populate('01')">_01101101 01110101 01110011 01101001 01100011</li>
+                <li class="buttons" onclick="populate('gb')">_Graphic Balance</li>
+                <li class="buttons" onclick="populate('nli')">_NEULI</li>
+                <li class="buttons" onclick="populate('mfh')">_Music for Hawaii</li>
+                <li class="buttons" onclick="populate('mfa')">_Music for Australia</li>
+                <li class="buttons" onclick="populate('mfe')">_Music for Europe</li>
+                <li class="buttons" onclick="populate('sfc')">_VI_000</li>
+              </ul>
+            <!-- audio link list -->
+            <li><span class="caret">audio</span>
+              <ul class="nested">
+                <li class="buttons" onclick="populate('com')">_Collection of Music</li>
+                <li class="buttons" onclick="populate('wpb')">_Watched Pot Boils</li>
+                <li class="buttons" onclick="populate('sfh')">_SFH_KXLU_YYYY-mm-dd</li>
+                <li class="buttons" onclick="populate('lb')">_Last Balcony</li>
+                <li class="buttons" onclick="populate('ifs')">_Ideas for Songs</li>
+                <li class="buttons" onclick="populate('tps')">_Transpositions</li> 
+                <li class="buttons" onclick="populate('01')">_01101101 01110101 01110011 01101001 01100011</li>
+                <li class="buttons" onclick="populate('mfh')">_Music for Hawaii</li>
+                <li class="buttons" onclick="populate('mfa')">_Music for Australia</li>
+                <li class="buttons" onclick="populate('mfe')">_Music for Europe</li>
+              </ul>
+            </li>
+            <!-- visual link list -->
+            <li><span class="caret">visual</span>
+              <ul class="nested">
+                <li class="buttons" onclick="populate('hmf')">Hello My Friends</li>
+                <li class="buttons" onclick="populate('tmdovt')">The Many Deaths of Vincent Thomas</li>
+                <li class="buttons" onclick="populate('df')">Deconstructed Flag</li>
+                <li class="buttons" onclick="populate('gb')">Graphic Balance</li>
+                <li class="buttons" onclick="populate('nli')">NEULI</li>
+              </ul>
+            </li>
+            <!-- other link list -->
+            <!-- <li><span class="caret">other</span> 
+              <ul class="nested">
+                  <li>Collection of Images</li>
+                  <li>Graphic Balance Archive</li>
+                  <li>Ipsum Caballum Anthology</li>
+              </ul>
+            </li> -->
+          </ul>
+        </li>
+      </ul>
+      <!-- clients link list -->
+      <ul id="myUL">
+        <li><span class="caret">clients</span>
+          <ul class="nested">
+            <li class="buttons" onclick="populate('apt')">_Apartamento</li>
+
+            <li class="buttons" onclick="populate('dior')">_Dior</li>
+            <li class="buttons" onclick="populate('moma')">_MoMa</li>
+            <li class="buttons" onclick="populate('ns')">_The New School</li>
+            <li class="buttons" onclick="populate('mp')">_Manhattan Portage</li>
+            <li class="buttons" onclick="populate('mcad')">_Monster Children x Adidas</li>
+            <li class="buttons" onclick="populate('nym')">_New York Magazine</li>
+          </ul>
+        </li>
+      </ul> 
+
+  </div>
+    <!-- hidden content divs -->
+  <div class="center-right">
+      <!-- BLANK DIV INITIAL PLACEHOLDER -->
+    <div class="content" id="blank"></div>
+    <!-- 015 HELLO MY FRIENDS -->
+    <div class="content" id="hmf">
+      <div class="content-top"><h2>Hello My Friends</h2></div>
+      <div class="content-left">
+        <a data-fslightbox="hmf" href="images/015_hello-my-friends/hmf-cover.jpg"><img id="album-art" src="images/015_hello-my-friends/hmf-cover.jpg"></a>        <a data-fslightbox="hmf" href="images/015_hello-my-friends/hmf-2.jpg"></a>
+        <a data-fslightbox="hmf" href="images/015_hello-my-friends/hmf-3.jpg"></a>
+        <a data-fslightbox="hmf" href="images/015_hello-my-friends/hmf-4.jpg"></a>
+        <a data-fslightbox="hmf" href="images/015_hello-my-friends/hmf-5.jpg"></a>
+        <a data-fslightbox="hmf" href="images/015_hello-my-friends/hmf-6.jpg"></a>
+        <a data-fslightbox="hmf" href="images/015_hello-my-friends/hmf-7.jpg"></a>
+        <a data-fslightbox="hmf" href="images/015_hello-my-friends/hmf-8.jpg"></a>
+        <a data-fslightbox="hmf" href="images/015_hello-my-friends/hmf-9.jpg"></a>
+
+
+        </div>
+      <div class="content-right">
+      <p>
+      A found footage chronicle of youth, drug abuse, internet addiction, viral culture, self worth, and identity in the armpit of America.<br><br>
+      <span class="red">Coming soon.</span><br>
+      VI_015
+      </p>
+      </div>
+      <div class="content-bottom">
+      <a href="" target="_blank"><img id="streaming-icon" src="images/streaming-icons/spotify.png"></a>
+        <a href="" target="_blank"><img id="streaming-icon" src="images/streaming-icons/apple.png"></a>
+        <a href="" target="_blank"><img id="streaming-icon" src="images/streaming-icons/youtube-music.png"></a>
+      
+      </div>
+    </div>
+
+   
+    <!-- 014 COLLECTION OF MUSIC -->
+    <div class="content" id="com">
+      <div class="content-top">
+        <h2>Collection of Music</h2>
+      </div>
+      <div class="content-left">
+        <a data-fslightbox="com" href="images/014_collection-of-music/com_art.jpg"><img id="album-art" src="images/014_collection-of-music/com_art.jpg"></a>
+        <a data-fslightbox="com" href="https://youtu.be/1Zz3YMT2HQc"></a>
+      </div>
+      <div class="content-right">
+        <p>
+        13 songs for bass and Rhodes<br><br>
+        <span class="bold">TRACKLIST</span><br>
+        01_Ostia<br>
+        02_Hello My Friends<br>
+        03_Wrong Way Down a One Way<br>
+        04_Down Water St.<br>
+        05_Gin/Zantac 150<br>
+        06_Gavage<br>
+        07_Käbəlˌstōn Nītˌmer<br>
+        08_Automatism 86<br>
+        09_Pişmiş<br>
+        10_Hot Behind<br>
+        11_Juniper<br>
+        12_Long Ways from Home<br>
+        13_Till Death<br><br>
+        <span class="bold">INSTRUMENTATION</span><br>
+        1980 Rhodes Suitcase 73<br>
+        Squire P-Bass<br><br>
+        Special thanks to debt, savings bonds and the culinary industry.<br><br>
+
+        released April 12, 2019<br>
+        VI_014
+      </p>
+      </div>
+       <!-- Linked streaming service icons -->
+      <div class="content-bottom">
+        <a href="https://open.spotify.com/album/1zsJrZ3hAvWJlexfU2p4lQ?si=WAf4z0T7RTWM9UB-6CZisw" target="_blank"><img id="streaming-icon" src="images/streaming-icons/spotify.png" alt="spotify icon"></a>
+        <a href="https://music.apple.com/us/album/collection-of-music/1459223243" target="_blank"><img id="streaming-icon" src="images/streaming-icons/apple.png" alt="apple music icon"></a>
+        <a href="https://music.youtube.com/playlist?list=OLAK5uy_nmM3k7U50VcuaxcImkR_7WRsVfz6jQvPw&feature=share" target="_blank"><img id="streaming-icon" src="images/streaming-icons/youtube-music.png"alt="youtube music icon"></a>
+      </div>
+    </div>
+
+    
+
+    <!-- 013 WATCHED POT BOILS -->
+    <div class="content" id="wpb">
+      <div class="content-top"><h2 class="stretch">Watched Pot Boils</h2></div>
+      <div class="content-left">
+        <a data-fslightbox="wpb" href="images/013_watched-pot/wpb-cover1.jpg"><img id="album-art" src="images/013_watched-pot/wpb-cover1.jpg"></a>
+        <a data-fslightbox="wpb" href="images/013_watched-pot/wpb-cover2.jpg"></a>
+      </div>
+      <div class="content-right">
+      <p>
+      An encapsulated year in NY.<br><br>
+        <span class="bold">TRACKLIST</span><br>
+        01_Stay Indoors<br>
+        02_Quarter Down<br>
+        03_K2<br>
+        04_Stand Clear<br>
+        05_Alright Now<br><br>
+        <span class="bold">INSTRUMENTATION</span><br>
+        Lucida classical guitar<br>
+        Rhodes Suitcase 73<br>
+        Kord MS-20 Mini <br>
+        Alesis HR-16<br>
+        Shoes on wood floor<br>
+        Steel wool<br>
+        Cast iron paintings<br>
+        Broom<br>
+        Arborio rice<br>
+        Fork<br>
+        Wooden spoon<br>
+        Various samples<br><br>
+        released June 25, 2018 <br>
+        VI_014
+      </p>
+      </div>
+      <div class="content-bottom">
+        <a href="https://open.spotify.com/album/3noCAiVtAbZ22LxCT0LwpA?si=tGA9j9ZVQdiRdiFzeqRQeA" target="_blank"><img id="streaming-icon" src="images/streaming-icons/spotify.png" alt="spotify icon"></a>
+        <a href="https://music.apple.com/us/album/watched-pot-boils-ep/1402811732" target="_blank"><img id="streaming-icon" src="images/streaming-icons/apple.png" alt="apple music icon"></a>
+        <a href="https://music.youtube.com/playlist?list=OLAK5uy_khqfcjVSRqgrArD9XwN2EyibNejaUeT0s&feature=share" target="_blank"><img id="streaming-icon" src="images/streaming-icons/youtube-music.png"alt="youtube music icon"></a>
+      </div>
+    </div> 
+
+
+
+
+
+        <!-- 012 SFH_KXLU_YYYY-mm-dd -->
+    <div class="content" id="sfh">
+      
+      <div class="content-top"><h2>SFH_KXLU_YYYY-mm-dd</h2></div>
+      <div class="content-left">
+        <a data-fslightbox="sfh" href="images/012_kxlu/kxlu-cover1.jpg"><img id="album-art" src="images/012_kxlu/kxlu-cover1.jpg"></a>
+        <a data-fslightbox="sfh" href="images/012_kxlu/kxlu-cover2.jpg"></a>
+        <a data-fslightbox="sfh" href="images/012_kxlu/kxlu-cover3.jpg"></a>
+      </div>
+      
+      <div class="content-right">
+        <!-- <div id="scroll-indicator"></div> -->
+        <p>This is a compilation of released and unreleased material arranged by Six Finger Hand for live broadcast.<br><br>
+        Six Finger Hand<br>
+        252 Vernon Ave<br>
+        Brooklyn, New York 11206<br><br><br>
+        <span class="bold">(Tracks 1-3)</span><br>
+        December 14th, 2017<br>
+        8:00-9 PM PST<br>
+        KXLU 88.9 FM<br>—<br>
+        One LMU Drive, Malone 402<br>
+        Los Angeles, CA 90045<br><br>
+        <span class="bold">(Tracks 1-4)</span><br>
+        January 23rd, 2018<br>
+        6:00-7:30 PM ET<br>
+        Know Wave<br>—<br>
+        Chinatown<br>
+        New York, NY 10002<br><br><br>
+        Special thanks to Gabrielle Costa and Theo Constantinou.<br><br><br>
+
+        <span class="bold">01_SFH_KXLU_2017-12-14.vi</span><br>
+        1. Life and Time - Austin Green<br>
+        2. Wasting Time - Polly Esther<br>
+        3. Through Navy Way - Austin Green & Giuseppe Lobasso<br>
+        4. Not Celebrity, Not Nice Guy - Six Finger Hand<br>
+        5. F-15 - Six Finger Hand<br><br>
+
+        <span class="bold">02_SFH_KXLU_2017-12-14.vi</span><br>
+        1. Kits - Super-16<br>
+        2. Xanadu - Super-16<br>
+        3. Short Gasps (Real Boiz) - Ipsum Caballum<br>
+        4. Be Rad and More Gone - Ipsum Caballum<br>
+        5. You Owe Me 13 Dollars Back In 1972 - Misn0mer<br>
+        6. On The Sunny Side of the Volcano - Super-16<br><br>
+
+        <span class="bold">03_SFH_KXLU_2017-12-14.vi</span><br>
+        1. Time - Ipsum Caballum<br>
+        2. Polive - Super-16<br>
+        3. Twins - Austin Green & Giuseppe Lobasso<br>
+        4. Gas Giant - Matt Payne<br>
+        5. Crimes & Punishment - Ipsum Caballum<br>
+        6. Anessas - Super-16<br><br>
+
+        <span class="bold">04_SFH_KW_2018-01-23.vi (20:38)</span><br>
+        1. Handling Acid - Ipsum Caballum<br>
+        2. Airplane Mode - Ipsum Caballum<br>
+        3. Ripped - Ipsum Caballum<br>
+        4. Stolid - Austin Green & Giuseppe Lobasso<br>
+        5. Pam - Ipsum Caballum (Unreleased)<br>
+        6. Falling With Style - Ipsum Caballum<br>
+        7. Happy 4th - Super-16<br><br><br>
+        released December 14, 2017<br>
+        VI_012</p>
+      </div>
+       <!-- Linked streaming service icons -->
+      <div class="content-bottom">
+        <a href="https://open.spotify.com/album/2aQ9T2LzQzGbZuMPHTxP0h?si=AGquBv_rTtSjeSmk7yutpg" target="_blank"><img id="streaming-icon" src="images/streaming-icons/spotify.png" alt="spotify icon"></a>
+        <a href="https://music.apple.com/us/album/live-on-air/1401052025" target="_blank"><img id="streaming-icon" src="images/streaming-icons/apple.png" alt="apple music icon"></a>
+        <a href="https://music.youtube.com/playlist?list=OLAK5uy_kmbbqHKxxdd0t-5vxbTrdQnwMbrLXI0eA&feature=share" target="_blank"><img id="streaming-icon" src="images/streaming-icons/youtube-music.png"alt="youtube music icon"></a>
+      </div>
+    </div>
+
+
+      <!-- 011 The Many Deaths of Vincent Thomas -->
+      <div class="content" id="tmdovt">
+        <div class="content-top"><h2>The Many Deaths of Vincent Thomas</h2></div>
+        <div class="content-left">
+          <a data-fslightbox="tmdovt" href="images/011_vincent-thomas/vt-cover-full.jpg"><img id="album-art" src="images/011_vincent-thomas/vt-cover.jpg"></a>
+          <a data-fslightbox="tmdovt" href="https://youtu.be/HgVYq-RAPw4"></a>
+          <a data-fslightbox="tmdovt" href="images/011_vincent-thomas/posters.jpg"></a>
+          <a data-fslightbox="tmdovt" href="images/011_vincent-thomas/vt-cover2.png"></a>
+          <a data-fslightbox="tmdovt" href="images/011_vincent-thomas/vt-cover3.png"></a>
+          <a data-fslightbox="tmdovt" data-class="fsLightbox-source" href="#pdf"></a>
+            <iframe
+              src="images/011_vincent-thomas/vt-guide.pdf"
+              id="pdf"
+        
+              class="fslightbox-source"
+
+              frameBorder="0"
+              allow="autoplay; fullscreen"
+              allowFullScreen
+          ></iframe> 
+          
+        </div>
+        <div class="content-right">
+        <p>
+          Between April and June of 2016, an upwards of
+          300 videos were published to the internet and
+          subsequently deleted by June 8th. They profile
+          a man who we will refer to as Vincent Thomas.
+          Vincent’s intentions were clear: to provide the
+          public a tour of the reservoir behind his house.
+          We do not condone or vilify Vincent’s
+          actions, all of which took place unaware of our
+          presence.<br><br>
+          Six Finger Hand invites you to expeerience The Many Deaths of Vincent Thomas; an original found footage documentary. Download the film and comprehensive guide below.<br><br>
+
+          Released July 28, 2017<br>
+          VI_011<br><br><br>
+
+
+
+        </p>
+        <p id="red"><a href="https://www.mediafire.com" target="_blank"><em>DOWNLOAD</em></a></p>
+
+
+        </div>
+
+            <!-- Linked streaming service icons -->
+        <div class="content-bottom">
+        
+          <a href="https://open.spotify.com/album/4M2A2MTSr3z2tw8I3TBSqC?si=C9_4yePAQ92r5lv0tEh38g" target="_blank"><img id="streaming-icon" src="images/streaming-icons/spotify.png" alt="spotify icon"></a>
+          <a href="https://music.apple.com/us/album/the-many-deaths-of-vincent-thomas/1271133681" target="_blank"><img id="streaming-icon" src="images/streaming-icons/apple.png" alt="apple music icon"></a>
+          <a href="https://music.youtube.com/playlist?list=OLAK5uy_nO7rzK1VzPkshfpFnyC8p4_t70LJzt1xY&feature=share" target="_blank"><img id="streaming-icon" src="images/streaming-icons/youtube-music.png"alt="youtube music icon"></a>
+      </div>
+      </div>
+
+
+
+
+
+        <!-- 010 Last Balcony -->
+      <div class="content" id="lb">
+        <div class="content-top"><h2>Last Balcony</h2></div>
+        <div class="content-left">
+        <a data-fslightbox="lb" href="images/010_last-balcony/lb-cover1.jpg"><img id="album-art" src="images/010_last-balcony/lb-cover1.jpg"></a>
+        <a data-fslightbox="lb" href="images/010_last-balcony/lb-cover2.jpg"></a>
+        <a data-fslightbox="lb" href="images/010_last-balcony/lb-cover3.jpg"></a>
+        <a data-fslightbox="lb" href="https://youtu.be/KAzqNZbTHvg"></a>
+        </div>
+        <div class="content-right">
+        <p>
+        An improvised digital conversation. Recorded live on a balcony.<br><br>
+        June 25, 2016<br>
+        2157 Maple St.<br>
+        Costa Mesa, California<br><br>
+        <b>TRACKLIST</b><br>
+        01_IMG 2157<br>
+        02_Couched<br>
+        03_59.2 Seagrams<br>
+        04_Full Moon, Rear Window<br>
+        05_5:00 AM Bluffs<br>
+        06_Balcony Falls<br>
+        07_Steamers at Sunset<br>
+        08_Ace High<br>
+        09_Twins<br>
+        10_177.81%<br><br>
+        <b>INSTRUMENTATION</b><br>
+        Korg MS-20 Mini<br>
+        Roland JP-08<br>
+        Line 6 DL4<br>
+        TC Electronic Shaker<br>
+        Danelectro Reel Echo<br>
+        2011 15" Macbook Pro, Ableton Live 8.1.4<br>
+        2015 15" Macbook Pro, Ableton Live 9<br><br>
+        released June 12, 2017<br>
+        VI_010
+        </p>
+        </div>
+         <!-- Linked streaming service icons -->
+        <div class="content-bottom">
+          <a href="https://open.spotify.com/album/45w4KqKO0Y6l0uQ2ENbjGx?si=MekiYnu3SOCFxZiNHtm3mA" target="_blank"><img id="streaming-icon" src="images/streaming-icons/spotify.png" alt="spotify icon"></a>
+          <a href="https://music.apple.com/us/album/last-balcony/1251032596" target="_blank"><img id="streaming-icon" src="images/streaming-icons/apple.png" alt="apple music icon"></a>
+          <a href="https://music.youtube.com/playlist?list=OLAK5uy_niU09hFF0JGWEycjZziNX5j_0Kst_Escw&feature=share" target="_blank"><img id="streaming-icon" src="images/streaming-icons/youtube-music.png"alt="youtube music icon"></a>
+      </div>
+      </div>
+
+
+
+        <!-- 008 Ideas for Songs -->
+      <div class="content" id="ifs">
+        <div class="content-top"><h2>Ideas for Songs</h2></div>
+        <div class="content-left">
+          <a data-fslightbox="ifs" href="images/008_ideas-for-songs/ifs-cover.jpg"><img id="album-art" src="images/008_ideas-for-songs/ifs-cover.jpg"></a>
+          <a data-fslightbox="ifs" href="images/008_ideas-for-songs/ifs-banner.jpg"></a>
+          <a data-fslightbox="ifs" href="https://youtu.be/72uWZKKZG6k"></a>
+        </div>
+        <div class="content-right">
+        <p>
+        A collection of music by <a href="https://open.spotify.com/artist/2s0QRzzqB4LmZ8hwz72MlM?si=47I2AYa6R8eHw6I4FUx-AA" target="_blank">Super-16</a>.<br><br>
+        <span class="bold">TRACKLIST</span><br>
+        01_Suite 405<br>
+        02_98 & Windy<br>
+        03_Nylon Diet<br>
+        04_Polive<br>
+        05_On Fremont St.<br><br>
+        released December 30, 2016<br>
+          VI_008
+        </p>
+        </div>
+        <div class="content-bottom">
+          <a href="https://open.spotify.com/album/2CYVQNB81LPZDNqeLEPSPh?si=Duat_ULMRfKUgrooZ2cg8g" target="_blank"><img id="streaming-icon" src="images/streaming-icons/spotify.png" alt="spotify icon"></a>
+          <a href="https://music.apple.com/us/album/ideas-for-songs/1212644721" target="_blank"><img id="streaming-icon" src="images/streaming-icons/apple.png" alt="apple music icon"></a>
+          <a href="https://music.youtube.com/playlist?list=OLAK5uy_lZyt-7mCk235cJHWLcMCQsWt-vVbHBxY8&feature=share" target="_blank"><img id="streaming-icon" src="images/streaming-icons/youtube-music.png"alt="youtube music icon"></a>
+        </div>
+      </div>
+
+
+
+
+      <!-- 007 Transpositions -->
+      <div class="content" id="tps">
+        <div class="content-top"><h2>TRANSPOSITIONS</h2></div>
+        <div class="content-left">
+          <a data-fslightbox="tp" href="images/007_transpositions/tp-cover1.jpg"><img id="album-art" src="images/007_transpositions/tp-cover1.jpg"></a>
+          <a data-fslightbox="tp" href="images/007_transpositions/tp-cover2.jpg"></a>
+          <a data-fslightbox="tp" href="https://youtu.be/AEkqrfeAHQk"></a>
+          <a data-fslightbox="tp" href="https://youtu.be/q9GWTbEG0bU"></a>
+          
+        </div>
+        <div class="content-right">
+          <p>
+          An 8 track album incorporating the saxophone shifting through different styles and ideas from our affiliates.<br><br>
+          <span class="bold">Personnel</span>:<br>
+          01_Gas Giant (Matt Payne)<br>
+          02_Vague Language (Modal, Matt Payne)<br>
+          03_Electric Sheep (Jayson Payne, Matt Payne)<br>
+          04_Fata Morgana (Matt Payne, Ipsum Caballum)<br>
+          05_Mercy Kill (Ipsum Caballum)<br>
+          06_Effort (Ipsum Caballum)<br>
+          07_The Richest Man in the Cemetery (SUPER-16)<br>
+          08_Separation Anxiety (Ipsum Caballum)<br><br>
+          released June 18, 2016<br>
+          VI_007
+          </p>
+        </div>
+        <div class="content-bottom">
+          <a href="https://open.spotify.com/album/0dn1xovkxfRLv9zjsevdw1?si=Dg86eT-aQWiehv15G235fQ" target="_blank"><img id="streaming-icon" src="images/streaming-icons/spotify.png" alt="spotify icon"></a>
+          <a href="https://music.apple.com/us/album/transpositions/1212746795" target="_blank"><img id="streaming-icon" src="images/streaming-icons/apple.png" alt="apple music icon"></a>
+          <a href="https://music.youtube.com/playlist?list=OLAK5uy_ntPa18cY838IahscoYPUx_PWydFgsmnoI&feature=share" target="_blank"><img id="streaming-icon" src="images/streaming-icons/youtube-music.png"alt="youtube music icon"></a>
+        </div>
+      </div>
+
+      <!-- 006 01101101 01110101 01110011 01101001 01100011 -->
+
+      <div class="content" id="01">
+      <div class="content-top"><h2>01101101 01110101 01110011 01101001 01100011</h2></div>
+      <div class="content-left">
+        <a data-fslightbox="01" href="images/006_01/01-cover1.jpg"><img id="album-art" src="images/006_01/01-cover1.jpg"></a>
+        <a data-fslightbox="01" href="images/006_01/01-cover2.jpg"></a>
+        <a data-fslightbox="01" href="https://youtu.be/6msE-Qw0mho"></a>
+      </div>
+      <div class="content-right">
+        <p>
+        Digital Music - from Super-16.<br><br>
+        <span class="bold">TRACKLIST</span><br>
+        01_Evening Homes<br>
+        02_The Sound of Traffic<br>
+        03_5:00 AM Kelty<br><br>
+        released May 13, 2016<br>
+        VI_006
+        </p>
+        </div>
+        <div class="content-bottom">
+          <a href="https://open.spotify.com/album/5OAAlUyd4BlhiPWQK2x6Z4?si=XKuENKP-R4eRVs7hPahrgw" target="_blank"><img id="streaming-icon" src="images/streaming-icons/spotify.png"></a>
+          <a href="https://music.apple.com/us/album/01101101-01110101-01110011-01101001-01100011/1229309545" target="_blank"><img id="streaming-icon" src="images/streaming-icons/apple.png"></a>
+          <a href="https://music.youtube.com/playlist?list=OLAK5uy_krNuNcf7JRCnPJT9D7-geyK_xm_Rl2iD0&feature=share" target="_blank"><img id="streaming-icon" src="images/streaming-icons/youtube-music.png"></a>
+        </div>
+      </div>
+
+      <!-- 005 Graphic Balance -->
+    <div class="content" id="gb">
+      <div class="content-top"><h2>Graphic Balance</h2></div>
+      <div class="content-left">
+        <a data-fslightbox="gb" href="https://youtu.be/M4L8GXH_wkY"><iframe width="560" height="315" src="https://www.youtube.com/embed/M4L8GXH_wkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
+      </div>
+      <div class="content-right">
+        <p>
+        An alternative video feed, currently under construction.<br><br>
+        <img class="construction" src="images/construction.png" alt="cone image"><br><br>
+        <span class="red">Coming Soon</span><br>
+        VI_003
+        </p>
+        </div>
+        <div class="content-bottom">
+        </div>
+      </div>
+
+      <!-- 009 Deconstructed Flag -->
+      <div class="content" id="df">
+      <div class="content-top"><h2>Deconstructed Flag</h2></div>
+      <div class="content-left">
+        <a data-fslightbox="df" href="images/009_deconstructed-flag/deconstructed-flag1.jpg"><img id="album-art" src="images/009_deconstructed-flag/deconstructed-flag1.jpg"></a>
+      </div>
+      <div class="content-right">
+        <p>
+        Risograph Print, 11 x 14.25 in<br>
+        80lb Neenah Vellum, Edition of 108<br><br> 
+        Deconstructed Flag targets the overall political divide America has reached in light of current events. This print realizes dogmatic views and the inability to compromise that has left the country in a constant state of tension. Most importantly, Deconstructed Flag acts as a symbol to encourage empathy and communication over intolerance.<br><br>
+        All proceeds will be donated to Planned Parenthood, ACLU, and NoDAPL.<br><br>
+        Printed by No Style Press: http://nostyle.us<br><br>
+        Released February 13, 2017<br>
+        VI-009<br><br>
+        <em class="red">SOLD OUT</em>
+        </p>
+        </div>
+        <div class="content-bottom">
+        </div>
+      </div>
+      <!-- 004 NEULI-->
+
+      <div class="content" id="nli">
+      <div class="content-top"><h2>NEULI</h2></div>
+      <div class="content-left">
+        <a data-fslightbox="nli" href="images/004_neuli/neuli-1.jpg"><img id="album-art" src="images/004_neuli/neuli-1.jpg"></a>
+        <a data-fslightbox="nli" href="images/004_neuli/neuli-2.jpg"></a>
+        <a data-fslightbox="nli" href="images/004_neuli/neuli-3.jpg"></a>
+        <a data-fslightbox="nli" href="images/004_neuli/neuli-4.jpg"></a>
+        <a data-fslightbox="nli" href="images/004_neuli/neuli-5.jpg"></a>
+      </div>
+      <div class="content-right">
+        <p>
+        NEULI re-contextualizes images from a common packaging and sales catalog known as ULINE.<br>
+        It acts as an ode to Marcel Duchamp and the readymade in modern context.<br><br>
+        Jayson Payne, 2016<br>
+        30 Pages, 4.25 X 5.5 in<br><br>
+        Released April 14, 2016<br>
+        VI_004<br>
+        </p>
+        </div>
+        <div class="content-bottom">
+        </div>
+      </div>
+   
+      <!-- 003 Music for Hawaii -->
+
+      <div class="content" id="mfh">
+      <div class="content-top"><h2>Music for Hawaii</h2></div>
+      <div class="content-left">
+        <a data-fslightbox="mfh" href="images/001_music-for/mfh-cover.jpg"><img id="album-art" src="images/001_music-for/mfh-cover.jpg"></a>
+        <a data-fslightbox="mfh" href="https://youtu.be/JwM_2fJvKwg"></a>
+        <a data-fslightbox="mfh" href="https://vimeo.com/121741897"></a>
+
+        
+      </div>
+      <div class="content-right">
+        <p>
+        Part 3/3 of an original score for a film series by <a href"https://www.megastrata.com/">Matt Payne</a>.<br><br>
+        <span class="bold">TRACKLIST</span><br>
+        01_Toaster<br>
+        02_Running Systems<br>
+        03_Tepid Coloring<br>
+        04_Eyes Glow emerald<br>
+        05_It Was Me<br><br>
+        released April 11, 2016 <br>
+        VI_003
+        </p>
+        </div>
+        <div class="content-bottom">
+          <a href="https://open.spotify.com/album/6dlnTf8jtPm92FiaokNcoC?si=GFi_FfwiSdGf_axtRG8q3A target="_blank"><img id="streaming-icon" src="images/streaming-icons/spotify.png"></a>
+          <a href="https://music.apple.com/us/album/music-for-hawaii-ep/1219176791" target="_blank"><img id="streaming-icon" src="images/streaming-icons/apple.png"></a>
+          <a href="https://music.youtube.com/playlist?list=OLAK5uy_lZxmHCQ74zPMy2mrVtKB7rp6hTsQLv6Vo&feature=share" target="_blank"><img id="streaming-icon" src="images/streaming-icons/youtube-music.png"></a>
+        </div>
+      </div>
+
+      <!-- links to vids 
+      https://vimeo.com/121741897
+      https://vimeo.com/119810118
+      https://vimeo.com/121742222
+
+
+
+    -->
+  
+      <!-- 002 Music for Australia-->
+      <div class="content" id="mfa">
+      <div class="content-top"><h2>Music for Australia</h2></div>
+      <div class="content-left">
+        <a data-fslightbox="mfa" href="images/001_music-for/mfa-cover.jpg"><img id="album-art" src="images/001_music-for/mfa-cover.jpg"></a>
+        <a data-fslightbox="mfa" href="https://youtu.be/4236m_pr8UQ"></a>
+
+      </div>
+      <div class="content-right">
+        <p>
+        Part 2/3 of an original score for a film series by <a href"https://www.megastrata.com/">Matt Payne</a>.<br><br>
+        <span class="bold">TRACKLIST</span><br>
+        01_As It Came To Be<br>
+        02_17 All Over Again<br>
+        03_The Sound of Traffic<br>
+        04_Blow<br>
+        05_In Bloom<br>
+        06_Viscosity 6%<br>
+        07_Enigmatic Superstar (Parts 1-3)<br><br>
+
+        released March 25, 2016<br>
+        VI_003
+        </p>
+        </div>
+        <div class="content-bottom">
+          <a href="https://open.spotify.com/album/59D9mXG2BLeJM3nH4ae4xX?si=IDznQdmSQWizCN0rpnN-dw" target="_blank"><img id="streaming-icon" src="images/streaming-icons/spotify.png"></a>
+          <a href="https://music.apple.com/us/album/music-for-australia/1219176879" target="_blank"><img id="streaming-icon" src="images/streaming-icons/apple.png"></a>
+          <a href="https://music.youtube.com/playlist?list=OLAK5uy_kRxiY06B1JP6GEZx9JU3IZVL39Duk_p3g&feature=share" target="_blank"><img id="streaming-icon" src="images/streaming-icons/youtube-music.png"></a>
+        </div>
+      </div>
+
+      <!-- video links
+      https://vimeo.com/138702245
+      https://vimeo.com/138702252
+      https://vimeo.com/138702229
+
+      -->
+
+      <!-- 001 Music for Europe-->
+      <div class="content" id="mfe">
+      <div class="content-top"><h2>Music for Europe</h2></div>
+      <div class="content-left">
+        <a data-fslightbox="mfe" href="images/001_music-for/mfe-cover.jpg"><img id="album-art" src="images/001_music-for/mfe-cover.jpg"></a>
+        <a data-fslightbox="mfe" href="https://youtu.be/48pJt2vByGk"></a>
+ 
+      </div>
+      <div class="content-right">
+        <p>
+        Part 1/3 of an original score for a film series by <a href"https://www.megastrata.com/">Matt Payne</a>.<br><br>
+        <span class="bold">TRACKLIST</span><br>
+        01_Maxwell's Demon<br>
+        02_10% Linen<br>
+        03_I Could Hurt a Fly<br>
+        04_Funky One/Detached<br>
+        05_The Many Deaths of Vincent Thomas<br><br>
+        released March 15, 2016<br>
+        VI_001
+        </p>
+        </div>
+        <div class="content-bottom">
+          <a href="https://open.spotify.com/album/6LyVyR9XWEcgU9E9pbjMaz?si=Z2pAAd2cTKCDSWYwTh-PEQ" target="_blank"><img id="streaming-icon" src="images/streaming-icons/spotify.png"></a>
+          <a href="https://music.apple.com/us/album/music-for-europe-ep/1229373661" target="_blank"><img id="streaming-icon" src="images/streaming-icons/apple.png"></a>
+          <a href="https://music.youtube.com/playlist?list=OLAK5uy_k0lxis52RtxCjRTexj67zBiKqO8zEoydg&feature=share" target="_blank"><img id="streaming-icon" src="images/streaming-icons/youtube-music.png"></a>
+        </div>
+      </div>
+
+      <!-- video links
+
+      https://vimeo.com/158383830
+      https://vimeo.com/156772263
+      https://vimeo.com/156771519
+
+      -->
+
+      <!-- SFH Playing Card -->
+
+
+      <div class="content" id="sfc">
+      <div class="content-top"><h2>SFH 52</h2></div>
+      <div class="content-left">
+        <a data-fslightbox="sfc" href="images/sfcard.png"><img id="album-art" src="images/sfcard.png"></a>
+
+ 
+      </div>
+      <div class="content-right">
+        <p>
+        Deck of 52 playing cards.<br>
+        1/1<br><br>
+        VI_000
+        </p>
+        </div>
+        <div class="content-bottom">
+        </div>
+      </div>
+
+    <!-- CLIENTSCLIENTSCLIENTS -->
+      <!-- Apartamento -->
+      <div class="content" id="apt">
+        <div class="content-top">
+          <h2>Apartamento</h2>
+        </div>
+        <div class="content-left">
+          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/560310218?h=e1e989406e" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="content-right">
+        <p>Tabboo! A short film by <a href="https://www.michaelcukr.com/" target="_blank">Michael Cukr</a><br><br>
+        TABBOO! has entered an exciting new stage in a life already jam-packed with excitement. The artist’s formative years were spent in parallel schools of culture: the art world and the drag world. He created a routine in which days were spent making paintings and nights were spent performing, with neither form of expression more important to him than the other. Revered for his impactful presence in nightlife, he came up during New York City’s mega club heyday—the ‘80s and ‘90s—with now mainstream stars Leigh Bowery, RuPaul, and Lady Bunny. True to his moniker, TABBOO!’s stage persona is unexpected, irreverent, and magnetic, sharing more with performance art than contemporary drag. Iconic moments such as the 1993 Wigstock debut of his sexual freedom anthem ‘It’s Natural’ have secured his legendary status, but the last few years have marked a shift in the appreciation of his talents. For decades, drag fame thwarted a welcome reception from an uptight artworld.
+        </p>
+        </div>
+        <div class="content-bottom">
+        <br> 
+        <p>
+        Original score by Six Finger Hand<br>
+        </p>
+        <a href="https://www.apartamentomagazine.com/"><em>Apartamento Magazine</em></a>
+        </div>
+      </div>
+      <!-- Brixton
+      <div class="client" id="bxt">
+        <div class="client-top">
+          <h2>Brixton</h2>
+        </div>
+        <div class="client-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SU4KMx-R7iA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="client-bottom">
+        <p>
+        original score
+        </p>
+        </div>
+      </div> -->
+      <!-- Dior -->
+        <div class="content" id="dior">
+        <div class="content-top">
+          <h2>Dior</h2>
+        </div>
+        <div class="content-left">
+            <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/Q16yd0iVd30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </div>
+        <div class="content-right">
+        <p>
+        In this transporting behind-the-scenes film of different shoots for Dior Magazine No.36, entitled "From Dior to Greece", immerse yourself in the atmosphere and inspirations of the Dior Cruise 2022 collection designed by Maria Grazia Chiuri. Sporty silhouettes inspired by classical Greece and mythical female goddesses and divinities are captured against ancient ruins and the sea, with commentaries by the photographers who collaborated on the project.
+        </div>
+        <div class="content-bottom">
+        <p>
+        <br>
+        Original score from Six Finger Hand<br><br>
+        <a href="http://baron-baron.com/">© Fabien Baron</a>
+
+        </p>
+        </div>
+      </div>
+        <!-- Manhattan Portage -->
+        <div class="content" id="mp">
+        <div class="content-top">
+          <h2>Manhattan Portage</h2>
+        </div>
+        <div class="content-left">
+      <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/dlXMsql1ZVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/grLBbe6u2Lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="content-right">
+        <p>
+        <a href="https://www.manhattanportage.com/?gclid=Cj0KCQjwiZqhBhCJARIsACHHEH_jUo1yThZMBVZGffcIwTARuz9gh0r9psuZFlGni5f8lhepI_Y14vQaAm6pEALw_wcB">Manhattan Portage</a><br><br>
+
+
+        Directed by <a href="http://www.petersutherland.com/">Peter Sutherland</a><br><br>
+
+        Produced by <a href="https://sewardparkfilms.nyc/">Seward Park Films Inc.</a>
+        </p>
+        </div>
+        <div class="content-bottom">
+        <p>
+        Original score by Six Finger Hand
+        </p>
+        </div>
+      </div>
+      <!-- MOMA -->
+       <div class="content" id="moma">
+        <div class="content-top">
+          <h2>MoMA</h2>
+        </div>
+        <div class="content-left">
+      <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/sRwYp4F-4lk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="content-right">
+        <p>
+        Architect <a href="https://linktr.ee/jo.hwang">Joyce Hwang</a> looks to other species for design lessons. "Animals are incredibly smart because they are survivors," she says. Hwang's work at University of Buffalo is at the forefront of a movement to design structures for nonhuman species. She studies the ways that wildlife–birds, bees, and bats–find shelter in the built environment. "They’re not extracting resources. They’re able to work with what they have. We look at the way the animals have survived for ages and ages without causing environmental crises."<br><br>
+        Built Ecologies: Architecture and Environment is a video series from MoMA’s Emilio Ambasz Institute for the Joint Study of the Built and the Natural Environment that features prominent architects and thinkers doing innovative work across environmental topics. In each episode, these figures are invited to define the terms “architecture” and “environment,” producing a through-line between videos that otherwise capture a wide variety of practices and backgrounds.
+        </p>
+        </div>
+        <div class="content-bottom">
+        <p>
+        Original score by Six Finger Hand<br><br>
+        <a href="https://www.moma.org/collection/">MoMA</a>
+        </p>
+        </div>
+      </div>
+
+
+      <!-- Monster Children x Adidas -->
+      <div class="content" id="mcad">
+        <div class="content-top">
+          <h2>Monster Children x Adidas</h2>
+        </div>
+        <div class="content-left">
+      <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/7vqpqSS2CnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="content-right">
+        <p>
+        Featuring the adidas Skateboarding team in Tokyo during the Skate Copa Classics event and rolled around the streets with Alec Majerus, Silas Baxter Neal, Dan Mancina, Diego Najera, Dennis Durrant, Jake Donnelly, Frankie Spears, Brad Saunders, Shin Sanbongi and Kento Yoshioka.<br><br>
+
+        Filmed, directed and edited by Michael Cukr<br>
+        Produced by Kevin Duffel<br>
+        Photography by Andrew James Peters<br>
+
+        </div>
+        <div class="content-bottom">
+        <p>
+        Original score by Six Finger Hand<br><br>
+        <small>01:20 - 03:00<br>
+        06:30 - 07:05</small>
+        </p>
+        </div>
+      </div>
+      <!-- The New School -->
+        <div class="content" id="ns">
+        <div class="content-top">
+          <h2>The New School</h2>
+        </div>
+        <div class="content-left">
+      <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/9YoIXXPJ0YU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           <!-- <iframe title="vimeo-player" src="https://player.vimeo.com/video/664974305?h=5acf9e7969" width="640" height="360" frameborder="0"    allowfullscreen></iframe> -->
+        </div>
+        <div class="content-right">
+        <p>
+        At Parsons, Ani has gained digital skills in an urban setting in which he can take his drawing—and personal and professional aspirations—to the next level.<br><br>
+
+In his BFA Illustration program, Dubai-born Ani was challenged to go beyond drawing to master other design tools, which led him to creative practices including animation, his new career focus. Life in New York City offers him ample creative inspiration while broadening his perspective on life and his future.
+
+        </div>
+        <div class="content-bottom">
+        <p>Original score by Six Finger Hand<br><br>
+        <a href="https://www.newschool.edu/parsons/"><em>Parsons School of Design</em></a><br>
+        <a href="https://www.newschool.edu/""><em>The New School</em></a>
+        </p>
+        </div>
+      </div>
+      <!-- New York Magazine -->
+      <div class="content" id="nym">
+        <div class="content-top">
+          <h2>New York Magazine</h2>
+        </div>
+        <div class="content-left">
+      <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/LgmC-OWnk_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="content-right">
+        <p>What it's like to be a New York City delivery worker.<br><br>
+        A film by <a href="https://www.danilop.com/"><em>Danilo Parra</em></a> for New York Magazine.<br>
+        Read the full report <a href="https://www.curbed.com/article/nyc-delivery-workers.html"><em>here</em></a>.</p>
+        </div>
+        <div class="content-bottom">
+        <p>Original score by Six Finger Hand<br><br>
+        <a href="https://nymag.com/"><em>New York Magazine</em></a>
+        </p>
+        </div>
+      </div>
+  </div>
+  <!-- bottom left and right grid segments -->
+
+    <div class="bottom">
+        <img class="logo-bottom" src="images/sflogo.png" alt="Hand Logo" >
+    </div>
+</div>
+<script src="js/gb.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script src="js/fslightbox.js"></script>
+
+
+</body>
+</html>
