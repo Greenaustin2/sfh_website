@@ -69,6 +69,26 @@ a:hover {
   color: #ebbc20;
 }
 
+.font1 {
+  font-family: "Georgia", serif;
+}
+
+.font2 {
+  font-family: "Bradley Hand", cursive;
+}
+.font3 {
+  font-family: "Trebuchet MS", sans-serif;
+}
+.font4 {
+  font-family: "Lucida Handwriting", cursive;
+}
+.font6 {
+  font-family: "Luminari", fantasy;
+}
+.font5 {
+  font-family: "Courier New", serif;
+}
+
 /* TOP NAVIGATION */
 .nav {
   float: right;
