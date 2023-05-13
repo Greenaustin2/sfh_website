@@ -21,3 +21,14 @@ function populate(id) {
   div.style.display = "grid";
   pclick = id;
 }
+
+// $(function () {
+//   $(".logo-top").hover(
+//     () => {
+//       $(this).attr("src", "images/full_logo_brown.png");
+//     },
+//     function () {
+//       $(this).attr("src", "images/full_logo.png");
+//     }
+//   );
+// });

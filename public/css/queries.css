@@ -137,11 +137,11 @@
     padding: 0px 0px 0px calc(3vw / 2);
   }
 
-  .youtube-video {
+  /* .youtube-video {
     aspect-ratio: 16 / 9;
     width: 97%;
     padding: 0px 0px 0px calc(3vw / 2);
-  }
+  } */
 
   #album-art {
     position: relative;
@@ -158,6 +158,20 @@
     transition: all 0.25s ease;
     filter: drop-shadow(16px 16px 10px rgba(187, 187, 187, 0.249)) blur(0.5px);
     padding: 0px 0px 0.5% 0px;
+  }
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 97%;
+    height: 97%;
+    left: calc(3vw / 2);
   }
 }
 
@@ -247,10 +261,25 @@
     grid-row: 4;
     position: relative;
   }
-  .youtube-video {
+  /* .youtube-video {
     aspect-ratio: 16 / 9;
     width: 95%;
+
+  } */
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
   }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 97%;
+    height: 97%;
+  }
+
   #album-art {
     position: relative;
     max-width: 93%;

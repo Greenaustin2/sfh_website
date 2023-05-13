@@ -7,6 +7,11 @@ body {
   overflow: hidden;
 }
 
+/* br {
+  display: block;
+  margin: 2px 0;
+} */
+
 h1 {
   color: #ebbc20;
   font-family: "Univers LT Std", sans-serif;
@@ -115,11 +120,17 @@ a:hover {
   transition: all 0.25s ease;
 }
 /* TOP/BOTTOM LOGO HOVER */
-/* .logo-top:hover,
+.logo-top:hover,
 .logo-bottom:hover {
   filter: brightness(80%);
   transition: all 0.25s ease;
-} */
+}
+
+.logo-top:active,
+.logo-bottom:active {
+  filter: invert(100%) brightness(100%);
+  transition: all 0.25s ease;
+}
 
 /* BOTTOM LOGO */
 .logo-bottom {
@@ -219,6 +230,7 @@ a:hover {
     Bitstream Vera Sans Mono, monospace;
   font-size: 0.75rem;
   transition: all 0.25s ease;
+  /* display: block; */
 }
 
 .buttons:hover,
@@ -321,7 +333,28 @@ ul,
   width: 40px;
   height: auto;
 }
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #album-art {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(16px 16px 10px rgba(187, 187, 187, 0.249));
+}
+
+#album-art-no {
   position: relative;
   max-width: 100%;
   height: auto;
