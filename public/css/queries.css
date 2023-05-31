@@ -295,4 +295,8 @@
     filter: drop-shadow(16px 16px 10px rgba(187, 187, 187, 0.249)) blur(0.5px);
     padding: 0px 0px 0.5% 0px;
   }
+
+  #album-art-no {
+    padding: 0px 20px 0px 0px;
+  }
 }
